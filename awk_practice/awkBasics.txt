@@ -1,0 +1,13 @@
+When an AWK program contains the BEGIN pattern without another special pattern, 
+AWK will not expect any further command line input and exit. Typically, when an 
+AWK program is executed on the command line, without the BEGIN special pattern, 
+AWK will continue to expect input until you exit by typing CTRL-D. The example 
+Hello World! program below will print and immediately exit.
+
+with awk the following code will work
+BEGIN {print "Hello World!"}
+in an awk file but without begin it will not.
+
+To run an awk file use awk -f filename
+
+
